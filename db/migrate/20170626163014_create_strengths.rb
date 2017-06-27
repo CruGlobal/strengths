@@ -8,8 +8,8 @@ class CreateStrengths < ActiveRecord::Migration[5.1]
 	t.decimal :percent_staff
 	t.decimal :percent_world
 	t.integer :leadership_id
-	add_foreign_key :strength, :leader_style, column: :leadership_id, primary_key: "id"
-      t.timestamps
+	t.timestamps
     end
+	add_foreign_key :strength, :leader_style, column: :leadership_id, primary_key: "id"
   end
 end

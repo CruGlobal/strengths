@@ -1,0 +1,2 @@
+class StrengthsController < ApplicationController
+end
